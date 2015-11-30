@@ -1,0 +1,10 @@
+#game{
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+#game td{
+	border: 1px solid black;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
