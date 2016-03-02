@@ -15,7 +15,7 @@ var opponentPiece = "<img src='<?= base_url() ?>images/red.jpg'>";
 // make sure these JQuery functions only fire when all DOM objects have loaded
 $(function(){
 	// every 2 seconds, use ajax querying for updates
-	$('body').everyTime(2000,function(){
+	$('body').everyTime(2000, function(){
 		if (status == 'waiting') {
 			$.getJSON('<?= base_url() ?>arcade/checkInvitation',function(data, text, jqZHR){
 				if (data && data.status=='rejected') {
